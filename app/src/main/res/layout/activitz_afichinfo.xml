@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ActivitzAfichinfoActivity">
+
+    <TextView
+        android:id="@+id/recapilatif"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Recapilulatif"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="30dp"/>
+    <TextView
+        android:id="@+id/Clien"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Client"
+        android:textSize="20dp"
+        android:textColor="#808080"
+        app:layout_constraintTop_toBottomOf="@+id/recapilatif"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="60dp"
+        android:layout_marginStart="20dp"/>
+
+
+    <TextView
+        android:id="@+id/Cafe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cafe"
+        android:textSize="20dp"
+        android:textColor="#808080"
+        app:layout_constraintTop_toBottomOf="@id/Clien"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="30sp"
+        android:layout_marginStart="20dp"/>
+
+    <TextView
+        android:id="@+id/The"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="The"
+        android:textSize="20dp"
+        android:textColor="#808080"
+        app:layout_constraintTop_toBottomOf="@id/Cafe"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="30sp"
+        android:layout_marginStart="20dp"/>
+
+    <TextView
+        android:id="@+id/Croissant"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Croissant"
+        android:textSize="20dp"
+        android:textColor="#808080"
+        app:layout_constraintTop_toBottomOf="@id/The"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="30sp"
+        android:layout_marginStart="20dp" />
+
+    <TextView
+        android:id="@+id/total"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total :"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/Croissant"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="50dp"/>
+
+    <Button
+        android:id="@+id/madifier"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Modifier"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/Confirmer"
+        android:layout_marginBottom="15dp"
+        android:layout_marginStart="10dp"/>
+
+    <Button
+        android:id="@+id/Confirmer"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Confirmer"
+        app:layout_constraintHorizontal_weight="2"
+        app:layout_constraintStart_toEndOf="@id/madifier"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="15dp"
+        android:layout_marginStart="5sp"
+        android:layout_marginEnd="15dp"/>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
