@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nombre de shots"
+        android:textStyle="bold"
+        android:textSize="16sp"/>
+
+    <RadioGroup
+        android:id="@+id/radioShots"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rbSimple"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Simple"/>
+
+        <RadioButton
+            android:id="@+id/rbDouble"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Double"
+            android:checked="true"/>
+
+        <RadioButton
+            android:id="@+id/rbTriple"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Triple"/>
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Intensité"
+        android:textStyle="bold"
+        android:textSize="16sp"/>
+
+    <RadioGroup
+        android:id="@+id/radioIntensite"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Douce"/>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Normale"
+            android:checked="true"/>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Forte"/>
+    </RadioGroup>
+
+    <CheckBox
+        android:id="@+id/chkLait"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ajouter du lait"/>
+
+</LinearLayout>
+  

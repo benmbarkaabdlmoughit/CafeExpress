@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".personnaliserCafe">
+
+    <TextView
+        android:id="@+id/Titre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Personnaliser votre cafe"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="15dp"/>
+    <TextView
+        android:id="@+id/Taill"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Taille"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/Titre"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"/>
+    <RadioGroup
+        android:id="@+id/rgTaille"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@id/Taill"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <RadioButton
+            android:id="@+id/petite"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Petite"/>
+
+        <RadioButton
+            android:id="@+id/Moyen"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Moyen"/>
+        <RadioButton
+            android:id="@+id/Grand"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Grande"/>
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/supplement"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="supplement"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@id/rgTaille"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="15dp"/>
+    <CheckBox
+        android:id="@+id/checsucr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sucre"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/supplement"
+        android:layout_marginStart="16dp"/>
+    <CheckBox
+        android:id="@+id/checCreme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cremee (+ 2DH)"
+        app:layout_constraintTop_toBottomOf="@id/checsucr"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="16dp"/>
+    <CheckBox
+        android:id="@+id/checCaramelle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Carannelle (+ 1DH)"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/checCreme"
+        android:layout_marginStart="16dp"/>
+
+    <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/switchEmporte"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="A emporter (+ 2DH)"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/checCaramelle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="16dp"/>
+
+    <TextView
+        android:id="@+id/Lait"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lait"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/switchEmporte"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"/>
+    <Spinner
+        android:id="@+id/spinerLait"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/Lait"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"/>
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Moyen,creme,laitd amande,a emporte"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/spinerLait"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="40dp"/>
+    <TextView
+        android:id="@+id/Prix"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Prix : "
+        android:textStyle="bold"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/title"/>
+
+    <Button
+        android:id="@+id/Calculer"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Calculer"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="20dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"/>
+
+
+
+
+
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

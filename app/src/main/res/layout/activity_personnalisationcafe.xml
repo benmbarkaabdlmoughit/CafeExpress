@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".PersonnalisationCafeActivity">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/Titre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Personnaliser votre café"
+            android:textStyle="bold"
+            android:textSize="30sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="20dp"/>
+        <ImageView
+            android:id="@+id/Image"
+            android:layout_width="match_parent"
+            android:layout_height="190dp"
+            android:scaleType="centerCrop"
+            app:layout_constraintTop_toBottomOf="@id/Titre"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:background="#FFF9F2"
+            android:layout_marginTop="20dp"
+            android:contentDescription="image cafe"/>
+        <TextView
+            android:id="@+id/Nomcafe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nom du café"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@id/Image"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="10dp"/>
+        <TextView
+            android:id="@+id/Taille"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Taille"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@id/Nomcafe"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="20dp"/>
+        <RadioGroup
+            android:id="@+id/radiotaill"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toBottomOf="@+id/Taille"
+            app:layout_constraintStart_toStartOf="parent">
+            <RadioButton
+                android:id="@+id/Small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Small"
+                android:layout_marginStart="10dp"/>
+            <RadioButton
+                android:id="@+id/Medium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Medium"
+                android:layout_marginStart="10dp"/>
+            <RadioButton
+                android:id="@+id/Large"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Large"
+                android:layout_marginStart="10dp"/>
+        </RadioGroup>
+        <TextView
+            android:id="@+id/Quantitédesucre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Quantité de sucre"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@+id/radiotaill"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="20dp"/>
+        <RadioGroup
+            android:id="@+id/qtitedesucre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toBottomOf="@+id/Quantitédesucre"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="10dp">
+
+            <RadioButton
+                android:id="@+id/Sans"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sans"
+                android:layout_marginStart="10dp"/>
+            <RadioButton
+            android:id="@+id/Normal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Normal"
+            android:layout_marginStart="10dp"/>
+
+            <RadioButton
+                android:id="@+id/Beaucoup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Beaucoup"
+                android:layout_marginStart="10dp"/>
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/titrepersonalisation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Personnalisation"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@id/qtitedesucre"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="20dp"/>
+        <LinearLayout
+            android:id="@+id/layoutOptionsSpecifiques"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/titrepersonalisation"/>
+
+        <TextView
+            android:id="@+id/afichprix"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Prix :"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@+id/layoutOptionsSpecifiques"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+        <Button
+            android:id="@+id/Ajouteraupanier"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Ajouter au panier"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginBottom="20dp"
+            android:backgroundTint="#795548"/>
+
+
+
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

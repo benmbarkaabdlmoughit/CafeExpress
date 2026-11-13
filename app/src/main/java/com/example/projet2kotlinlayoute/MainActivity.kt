@@ -25,6 +25,8 @@ class MainActivity : AppCompatActivity() {
     private lateinit var total: TextView
     private lateinit var btnvider: Button
     private lateinit var btncommander: Button
+    private lateinit var Personnaliser : Button
+
 
     private val prixcafe = 10.0
     private val prixthe = 8.0
@@ -48,10 +50,33 @@ class MainActivity : AppCompatActivity() {
         btncommander = findViewById(R.id.btncommander)
         btnvider = findViewById(R.id.btnvider)
         total = findViewById(R.id.total)
+        Personnaliser = findViewById(R.id.Personnaliser)
+
 
         btn(btn1, btn2, quntite1)
         btn(btn3, btn4, quntite2)
         btn(btn5, btn6, quntite3)
+
+        Personnaliser.setOnClickListener {
+            val q1 = quntite1.text.toString().toIntOrNull() ?: 0
+            val q2 = quntite2.text.toString().toIntOrNull() ?: 0
+            val q3 = quntite3.text.toString().toIntOrNull() ?: 0
+
+            if (q1 > 0 || q2 > 0 || q3 > 0) {
+                val intent = Intent(this, PersonnalisationtousmenuActivity::class.java)
+
+
+
+                startActivity(intent)
+
+            } else {
+                Toast.makeText(
+                    this,
+                    "Choisissez au moins un produit",
+                    Toast.LENGTH_SHORT
+                ).show()
+            }
+        }
 
 
         btncommander.setOnClickListener {

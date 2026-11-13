@@ -33,7 +33,7 @@ class ActivitzAfichinfoActivity : AppCompatActivity() {
 
 
 
-        txtRecapClient.text = "clien : $nom"
+        txtRecapClient.text = "Clien : $nom"
         txtRecapcafe.text = "Café : $qntiteCafe × 10 DH = ${qntiteCafe * 10} DH"
         txtRecapThe.text = "The : $qntiteThe × 10 DH = ${qntiteThe * 8} DH"
         txtRecepCroissanat.text = "Croissant : $qntiteCroisant × 10 DH = ${qntiteCroisant * 6} Dh"

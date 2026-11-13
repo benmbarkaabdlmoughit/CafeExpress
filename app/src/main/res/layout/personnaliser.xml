@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PersonnalisationtousmenuActivity">
+
+
+
+    <TextView
+        android:id="@+id/titrePersonnalisation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Personnalisation"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="30dp"/>
+
+    <TextView
+        android:id="@+id/petitetitre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Choisissez les produits que vous souhaitez personnaliser."
+        android:textSize="15sp"
+        android:textStyle="italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/titrePersonnalisation"
+        android:layout_marginTop="50dp"/>
+
+    <ImageButton
+        android:id="@+id/imgecafe"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/cafe_creme"
+        android:scaleType="centerCrop"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/petitetitre"
+        android:layout_marginStart="30dp"/>
+
+
+    <TextView
+        android:id="@+id/choisiCafe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cafe"
+        android:textSize="30sp"
+        app:layout_constraintTop_toBottomOf="@id/petitetitre"
+        app:layout_constraintStart_toEndOf="@+id/imgecafe"
+        android:layout_marginTop="50dp"
+        android:layout_marginStart="5dp"/>
+    <Button
+        android:id="@+id/ButonCafe"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Personnalisation Cafe"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/choisiCafe"
+        android:layout_marginEnd="15dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="#F5F5DC"
+        android:textColor="@color/black"/>
+
+    //the
+    <ImageButton
+        android:id="@+id/imagethe"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/images__1_"
+        android:scaleType="centerCrop"
+        app:layout_constraintTop_toBottomOf="@id/ButonCafe"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="30dp"
+        />
+
+
+    <TextView
+        android:id="@+id/choisiThe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="The"
+        android:textSize="30sp"
+        app:layout_constraintTop_toBottomOf="@id/ButonCafe"
+        app:layout_constraintStart_toEndOf="@+id/imagethe"
+        android:layout_marginTop="50dp"
+        android:layout_marginStart="10dp"/>
+    <Button
+        android:id="@+id/ButonThe"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Personnalisation The"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/choisiThe"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        android:backgroundTint="#F5F5DC"
+        android:textColor="@color/black"/>
+
+    //croissant
+    <ImageButton
+        android:id="@+id/imagecroissemt"
+        android:layout_width="100dp"
+        android:layout_height="80dp"
+        android:src="@drawable/images__2_"
+        android:scaleType="centerCrop"
+        app:layout_constraintTop_toBottomOf="@id/ButonThe"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/choisiCroissant"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Croissant"
+        android:textSize="30sp"
+        app:layout_constraintTop_toBottomOf="@id/ButonThe"
+        app:layout_constraintStart_toEndOf="@id/imagecroissemt"
+        android:layout_marginTop="50dp"
+        android:layout_marginStart="10dp"/>
+    <Button
+        android:id="@+id/ButonCroissant"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Personnalisation Croissant"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/choisiCroissant"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="#F5F5DC"
+        android:textColor="@color/black"/>
+
+    <Button
+        android:id="@+id/btnreturn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Returne"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="30dp"
+        android:backgroundTint="@color/black"/>
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

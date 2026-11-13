@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".personaliserchoisiedeCafe">
+
+    <TextView
+        android:id="@+id/titre1er"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Choisissez le café que vous préférez"
+        android:textSize="30dp"
+        android:gravity="center"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <ImageButton
+        android:id="@+id/butoncafe1Espress"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/_1_espresso_single_double_18_aed___22_aed"
+        android:scaleType="centerCrop"
+        app:layout_constraintTop_toBottomOf="@+id/titre1er"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/imagCappuccino"
+        android:layout_marginTop="30dp"/>
+    <ImageButton
+        android:id="@+id/imagCappuccino"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/how_to_make_cappuccinos_766116_hero_01_a754d567739b4ee0b209305138ecb996"
+        android:scaleType="centerCrop"
+        app:layout_constraintTop_toBottomOf="@+id/titre1er"
+        app:layout_constraintStart_toEndOf="@+id/butoncafe1Espress"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="30dp"/>
+    <TextView
+        android:id="@+id/tixtexpresso"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Espresso"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        app:layout_constraintTop_toBottomOf="@+id/butoncafe1Espress"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="60dp"
+        app:layout_constraintEnd_toStartOf="@+id/textCappuccino"/>
+    <TextView
+        android:id="@+id/textCappuccino"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Cappuccino"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/imagCappuccino"
+        app:layout_constraintStart_toEndOf="@+id/tixtexpresso"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <ImageButton
+        android:id="@+id/imageCaféLatte"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/_6891bea698d4d2c46687b37e07cd1b3d"
+        android:background="@android:color/transparent"
+        android:scaleType="centerCrop"
+        android:adjustViewBounds="true"
+        app:layout_constraintTop_toBottomOf="@+id/textCappuccino"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/imageAmericano"
+        android:layout_marginTop="10dp"/>
+    <ImageButton
+        android:id="@+id/imageAmericano"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/images__3_"
+        android:background="@android:color/transparent"
+        android:scaleType="centerCrop"
+        android:adjustViewBounds="true"
+        app:layout_constraintTop_toBottomOf="@+id/textCappuccino"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageCaféLatte"
+        android:layout_marginTop="10dp"/>
+    <TextView
+        android:id="@+id/txtCaféLatte"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Café Latte"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        app:layout_constraintTop_toBottomOf="@+id/imageCaféLatte"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="60dp"
+        app:layout_constraintEnd_toStartOf="@+id/txtAmericano"/>
+    <TextView
+        android:id="@+id/txtAmericano"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Americano"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/imageAmericano"
+        app:layout_constraintStart_toEndOf="@+id/txtCaféLatte"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+
+    <ImageButton
+        android:id="@+id/imageCaféGlacé"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/images__4_"
+        android:background="@android:color/transparent"
+        android:scaleType="centerCrop"
+        android:adjustViewBounds="true"
+        app:layout_constraintTop_toBottomOf="@+id/txtCaféLatte"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/imageMocha"
+        android:layout_marginTop="10dp"/>
+    <ImageButton
+        android:id="@+id/imageMocha"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/qshilil4tkyqhrj4mghaw3pd_sfm2harhjwswqnjyrpwkzerf4iodwu0hydmrsa4yrhoptstgztrq775lnuddkhyhm6oqlhhngkjpepxzjgotghiyrgkl0igbhpowlcvr_3rb2g94aghmjmldznoizxylx8x0j1zodyflqlritc"
+        android:background="@android:color/transparent"
+        android:scaleType="centerCrop"
+        android:adjustViewBounds="true"
+        app:layout_constraintTop_toBottomOf="@+id/txtAmericano"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageCaféGlacé"
+        android:layout_marginTop="10dp"/>
+    <TextView
+        android:id="@+id/txtCaféGlacé"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Café Latte"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        app:layout_constraintTop_toBottomOf="@+id/imageCaféGlacé"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="60dp"
+        app:layout_constraintEnd_toStartOf="@+id/txtMocha"/>
+    <TextView
+        android:id="@+id/txtMocha"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Americano"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/imageMocha"
+        app:layout_constraintStart_toEndOf="@+id/txtCaféGlacé"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
